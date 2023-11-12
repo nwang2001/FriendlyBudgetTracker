@@ -26,18 +26,57 @@ $primary-color: #e1f3ef;
 $main-color: #3aeeca;
 $second-color: #2821a4;
 
-// 
+// scss for html page
 body {
     padding: 0;
-    margin: 0;
+    margin: 1em;
     font: 100% $font-stack;
     color: $primary-color;
     @include gradient(right, $list4);
+    text-align: left;
 }
 
+main {
+    background: rgba($color: #120f3d, $alpha: 0.2);
+    margin: 0;
+    padding: 1em;
+    font-size: 1.5em;
+
+    div {
+        padding: 0.5em 0;
+    }
+}
+
+input[type="text"], input[type="number"] {
+    height: 1.5em;
+    font-family: inherit;
+    width: 10em;
+    background-color: #e1f3ef;
+    border: 0.1em solid;
+    text-align: right;
+}
 input[type="button"] {
     color: $main-color;
     background-color: $second-color;
     border: 1px solid $main-color;
     font-family: $font-stack;
+    height: 2em;
+    font-size: 0.6em;
 }
+
+
+#list {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.gif {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 500px;
+}
+

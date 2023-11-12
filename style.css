@@ -1,12 +1,32 @@
 body {
   padding: 0;
-  margin: 0;
+  margin: 1em;
   font: 100% Roboto Slab, serif;
   color: #e1f3ef;
   background: -webkit-linear-gradient(right, #29c9a9, #191654 30%, #29c9a9);
   background: -moz-linear-gradient(right, #29c9a9, #191654 30%, #29c9a9);
   background: -o-linear-gradient(right, #29c9a9, #191654 30%, #29c9a9);
   background: linear-gradient(right, #29c9a9, #191654 30%, #29c9a9);
+  text-align: left;
+}
+
+main {
+  background: rgba(18, 15, 61, 0.2);
+  margin: 0;
+  padding: 1em;
+  font-size: 1.5em;
+}
+main div {
+  padding: 0.5em 0;
+}
+
+input[type=text], input[type=number] {
+  height: 1.5em;
+  font-family: inherit;
+  width: 10em;
+  background-color: #e1f3ef;
+  border: 0.1em solid;
+  text-align: right;
 }
 
 input[type=button] {
@@ -14,6 +34,23 @@ input[type=button] {
   background-color: #2821a4;
   border: 1px solid #3aeeca;
   font-family: Roboto Slab, serif;
+  height: 2em;
+  font-size: 0.6em;
+}
+
+#list {
+  text-align: right;
+  font-size: 0.8em;
+}
+
+.gif {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */
