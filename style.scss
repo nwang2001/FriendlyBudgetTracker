@@ -1,0 +1,43 @@
+// color variables
+$color1: #29c9a9;
+$color2: #191654;
+
+// color gradient lists
+$list1: $color1, $color2, $color1;
+$list2: $color1 25%, $color2 50%, $color1 75%, $color2 100%;
+$list3: $color1, $color2, $color1, $color2, $color1;
+$list4: $color1, $color2 30%, $color1;
+
+// mixin called gradient with background properties
+@mixin gradient($direction, $list) {
+    background: -webkit-linear-gradient($direction, $list);
+    background: -moz-linear-gradient($direction, $list);
+    background: -o-linear-gradient($direction, $list);
+    background: linear-gradient($direction, $list);
+}
+
+// setting the font
+$font-stack: Roboto Slab, serif;
+
+// setting the primary color variable
+$primary-color: #e1f3ef;
+
+// other color variables
+$main-color: #3aeeca;
+$second-color: #2821a4;
+
+// 
+body {
+    padding: 0;
+    margin: 0;
+    font: 100% $font-stack;
+    color: $primary-color;
+    @include gradient(right, $list4);
+}
+
+input[type="button"] {
+    color: $main-color;
+    background-color: $second-color;
+    border: 1px solid $main-color;
+    font-family: $font-stack;
+}
