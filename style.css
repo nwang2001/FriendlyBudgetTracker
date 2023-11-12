@@ -20,7 +20,8 @@ main div {
   padding: 0.5em 0;
 }
 
-input[type=text], input[type=number] {
+input[type=text],
+input[type=number] {
   height: 1.5em;
   font-family: inherit;
   width: 10em;
