@@ -22,7 +22,7 @@ class Budget {
 
     addExpense(type, amount) {
         if (amount > this.availableBudget) {
-            alert('Insufficient funds, will go into negatives.')
+            alert('Insufficient funds, will go into negatives. Go make more money.')
             return;
         }
 
