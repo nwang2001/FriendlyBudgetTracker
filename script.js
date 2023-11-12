@@ -57,6 +57,9 @@ document.getElementById('enter-income').addEventListener('click', function (){
    
     if (incomeType && !isNaN(incomeAmt)) {
         budgetTracker.addIncome(incomeType, incomeAmt);
+    } else {
+        alert('Add valid inputs and fill out all fields.')
+        return;
     }
 });
 
@@ -67,6 +70,9 @@ document.getElementById('enter-expense').addEventListener('click', function (){
    
     if (expenseType && !isNaN(expenseAmt)) {
         budgetTracker.addExpense(expenseType, expenseAmt);
+    } else {
+        alert('Add valid inputs and fill out all fields.')
+        return;
     }
 });
 
