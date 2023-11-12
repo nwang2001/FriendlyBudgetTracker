@@ -1,0 +1,19 @@
+body {
+  padding: 0;
+  margin: 0;
+  font: 100% Roboto Slab, serif;
+  color: #e1f3ef;
+  background: -webkit-linear-gradient(right, #29c9a9, #191654 30%, #29c9a9);
+  background: -moz-linear-gradient(right, #29c9a9, #191654 30%, #29c9a9);
+  background: -o-linear-gradient(right, #29c9a9, #191654 30%, #29c9a9);
+  background: linear-gradient(right, #29c9a9, #191654 30%, #29c9a9);
+}
+
+input[type=button] {
+  color: #3aeeca;
+  background-color: #2821a4;
+  border: 1px solid #3aeeca;
+  font-family: Roboto Slab, serif;
+}
+
+/*# sourceMappingURL=style.css.map */
