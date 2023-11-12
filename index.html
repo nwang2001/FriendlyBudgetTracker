@@ -20,12 +20,8 @@
     </header>
     <main>
         <div class="container">
-            <div class="budget-container">
-                <form class="budget">
-                    <label for="budgetDisplay">Available Budget: </label>
-                    <input type="number" id="budgetDisplay" placeholder="0" readonly>
-                </form>
-            </div>
+
+            <!-- div class and form for income -->
             <div class="income-container">
                 <form class="income">
                     <label for="income-input">Income: </label>
@@ -34,6 +30,8 @@
                     <input type="button" id="enter-income" value="Enter Income">
                 </form>
             </div>
+
+            <!-- div class and form for expense -->
             <div class="expense-container">
                 <form class="expense">
                     <label for="expense-input">Expenses: </label>
@@ -42,13 +40,25 @@
                     <input type="button" id="enter-expense" value="Enter Expense">
                 </form>
             </div>
+
+            <!-- div class for clear button -->
             <div>
-            <input type="button" id="clear" value="Clear Everything">
+                <input type="button" id="clear" value="Clear Everything">
             </div>
+
+            <!--div class for transactions-->
             <div class="transaction-list">
                 <h4>Recent Transactions: </h4>
                 <div class="list-container" id="list">
                 </div>
+            </div>
+
+            <!--div class for budget-->
+            <div class="budget-container">
+                <form class="budget">
+                    <label for="budgetDisplay">Available Balance: </label>
+                    <input type="number" id="budgetDisplay" placeholder="0" readonly>
+                </form>
             </div>
             <div class="gif">
                 <img src="pandas.gif">
