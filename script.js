@@ -19,6 +19,7 @@ class Budget {
         this.transactions.push({ type: 'Income', description: type, amount: amount });
         this.updateTransactionList();
         console.log(this.updateTransactionList);
+        this.clearInputFields();
     }
 
     addExpense(type, amount) {
@@ -32,6 +33,7 @@ class Budget {
         this.updateBudget();
         this.transactions.push({ type: 'Expense', description: type, amount: amount });
         this.updateTransactionList();
+        this.clearInputFields();
     }
 
     updateTransactionList() {
@@ -44,6 +46,13 @@ class Budget {
             listItem.textContent = `${transaction.type}: ${transaction.description}  ${transaction.amount.toFixed(2)}`;
             listContainer.appendChild(listItem);
         });
+    }
+
+    clearInputFields() {
+    document.getElementById('income-type').value = '';
+    document.getElementById('income-input').value = '';
+    document.getElementById('expense-type').value = '';
+    document.getElementById('expense-input').value = '';
     }
 }
 
