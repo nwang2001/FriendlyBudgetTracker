@@ -10,7 +10,7 @@ class Budget {
     // methods to update budget, add income, add expenses, and update transaction list
     updateBudget() {
         const budgetDisplay = document.getElementById('budgetDisplay');
-        budgetDisplay.value = this.availableBudget;
+        budgetDisplay.value = this.availableBudget.toFixed(2);
     }
 
     addIncome(type, amount) {
