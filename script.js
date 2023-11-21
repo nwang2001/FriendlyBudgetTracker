@@ -14,6 +14,11 @@ class Budget {
     }
 
     addIncome(type, amount) {
+        // an alert if income is negative
+        if (amount <= 0) {
+            alert('Amount needs to be greater than zero.')
+            return;
+        }
         this.availableBudget += amount;
         this.updateBudget();
         this.transactions.push({ type: 'Income', description: type, amount: amount });
