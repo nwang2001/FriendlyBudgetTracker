@@ -29,8 +29,13 @@ class Budget {
 
     addExpense(type, amount) {
         // an alert if available budget is less than the expense amount
-        if (amount > this.availableBudget) {
+        if (amount > this.availableBudget ) {
             alert('Insufficient funds, will go into negatives. Go make more money.')
+            return;
+        }
+        // an alert if income is negative
+        if (amount <= 0) {
+            alert('Amount needs to be greater than zero.')
             return;
         }
 
