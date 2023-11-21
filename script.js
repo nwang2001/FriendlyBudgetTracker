@@ -16,7 +16,7 @@ class Budget {
     addIncome(type, amount) {
         // an alert if income is negative
         if (amount <= 0) {
-            alert('Amount needs to be greater than zero.')
+            alert('Amount needs to be greater than zero. Add as expense if applicable.')
             return;
         }
         this.availableBudget += amount;
@@ -41,7 +41,7 @@ class Budget {
 
         this.availableBudget -= amount;
         this.updateBudget();
-        this.transactions.push({ type: 'Expense', description: type, amount: amount });
+        this.transactions.push({ type: 'Expense', description: type, amount: -1 * amount });
         this.updateTransactionList();
         this.clearInputFields();
     }
